@@ -1,10 +1,3 @@
-Smart Task Analyzer – Full Stack Assignment (Django + JavaScript)
-
-This project is a Smart Task Analyzer that helps users organize tasks based on priority, deadlines, importance, and dependencies.
-It provides intelligent scoring and sorting modes to help users decide which task to work on first.
-
-This is the submission for the Singularium Internship Assignment 2025.
-
 📌 Features
 🔹 1. Intelligent Task Scoring
 
@@ -26,16 +19,13 @@ smart	Balanced: importance, urgency, hours
 fastest	Smallest estimated hours first
 impact	Highest importance first
 deadline	Urgent tasks first
-🔹 3. Full REST API
-
-Backend built using Django + DRF:
-
-Method	Endpoint	        Description
+🔹 3. Full REST API (Django + DRF)
+Method	Endpoint	Description
 POST	/api/tasks/analyze/	Returns sorted tasks with score + reasons
 POST	/api/tasks/suggest/	Suggests next best tasks
 🔹 4. Simple Frontend UI
 
-Built using:
+Frontend built with:
 
 HTML
 
@@ -43,11 +33,15 @@ CSS
 
 JavaScript (Fetch API)
 
-The frontend allows:
-✔ Add tasks manually
-✔ Paste JSON array of tasks
-✔ Select sorting mode
-✔ View results with scores & explanations
+Features:
+
+Add tasks manually
+
+Paste JSON task lists
+
+Select sorting mode
+
+View results with scores and explanation
 
 🗂 Project Structure
 task-analyzer/
@@ -77,22 +71,19 @@ python manage.py runserver
 
 
 Backend runs at:
-
 http://127.0.0.1:8000/
 
 3️⃣ Open the Frontend
 
-Go to:
+Open:
 
 task-analyzer/frontend/index.html
 
 
-Double-click to open it in browser.
+Double-click to open in browser.
 
 💡 API Usage Example (POST /analyze)
-
-Request Body:
-
+Request Body
 [
   {
     "id": "t1",
@@ -104,9 +95,7 @@ Request Body:
   }
 ]
 
-
-Response Example:
-
+Response Example
 {
   "tasks": [
     {
