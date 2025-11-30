@@ -30,7 +30,7 @@ deadline	Urgent tasks first
 
 Backend built using Django + DRF:
 
-Method	Endpoint	Description
+Method	Endpoint	        Description
 POST	/api/tasks/analyze/	Returns sorted tasks with score + reasons
 POST	/api/tasks/suggest/	Suggests next best tasks
 🔹 4. Simple Frontend UI
